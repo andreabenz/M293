@@ -73,3 +73,18 @@ footer {
         border-top-right-radius: inherit;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+#apfel {
+    text-align: center;
+    div {
+        margin: 5px;
+    }
+
+    ul, ol {
+        list-style-position: inside;
+    }
+}
