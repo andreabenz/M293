@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --silver: #c5c5c5ff;
+  --iron-grey: #4c5b61ff;
+  --grey-olive: #829191ff;
+  --grey-olive-2: #949b96ff;
+  --dark-slate-grey: #2c423fff;
+}
+
+header {
+  background-color: var(--grey-olive);
+  padding: 50px;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+main {
+  margin: 0 auto;
+  width: min(100%, 1400px);
+  padding: 20px;
+  background-color: var(--silver);
+}
+
+footer {
+  background-color: var(--grey-olive);
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  ul {
+    list-style-position: inside;
+  }
+}
+
+#recepe-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.recepe-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-slate-grey);
+    color: white;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+
+    & > div {
+        padding: 10px;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+    }
+}
