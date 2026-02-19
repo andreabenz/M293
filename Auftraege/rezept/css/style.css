@@ -44,47 +44,81 @@ footer {
 }
 
 #recepe-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .recepe-card {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--dark-slate-grey);
-    color: white;
-    transition: all 0.3s ease;
-    border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-slate-grey);
+  color: white;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  cursor: pointer;
 
-    &:hover {
-        transform: translateY(-2px);
-    }
+  &:hover {
+    transform: translateY(-2px);
+  }
 
-    & > div {
-        padding: 10px;
-    }
+  & > div {
+    padding: 10px;
+  }
 
-    img {
-        object-fit: cover;
-        width: 100%;
-        border-top-left-radius: inherit;
-        border-top-right-radius: inherit;
-    }
+  img {
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 #apfel {
+  #apfel-header {
     text-align: center;
-    div {
-        margin: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p {
+      font-weight: bold;
     }
 
-    ul, ol {
-        list-style-position: inside;
+    img {
+      box-shadow: 3px 3px 3px solid var(--dark-slate-grey);
+      border-radius: 5px;
     }
+  }
+
+  div {
+    margin: 5px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  ul,
+  ol {
+    list-style-position: inside;
+
+    & ul, ol {
+      margin-left: 20px;
+    }
+  }
+}
+
+#two-grid-layout {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
 }
