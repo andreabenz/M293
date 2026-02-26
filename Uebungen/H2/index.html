@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Some random Blog</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .post-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .post {
+        padding: 5px;
+        border: 2px solid black;
+
+        &:hover {
+          cursor: pointer;
+          background-color: lightgray;
+        }
+      }
+      body {
+        background-color: white;
+        width: 80%;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to some random Blog</h1>
+    <div class="post-grid">
+      <div class="post" onclick="window.location.href = './web-at-school.html'">
+        <h2>Web programming in a nutshell (at school)</h2>
+        <p>
+          Even though most schools teach some basic HTML/CSS, most of them...
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

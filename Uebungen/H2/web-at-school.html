@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog: List</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: white;
+      width: 80%;
+      margin: 0 auto;
+
+      p {
+          padding-top: 10px;
+          padding-bottom: 10px;
+      }
+    }
+    #comments-section {
+      padding: 20px;
+      border: 2px solid black;
+
+      hr {
+        margin: 20px;
+      }
+    }
+    textarea {
+      width: 100%;
+    }
+    .comment {
+      background-color: lightgray;
+      border: 2px solid black;
+      padding: 5px;
+    }
+  </style>
+  <body>
+    <main>
+    <h1>Web programming in a nutshell (at school)</h1>
+      <p>
+        Even though most schools teach some basic HTML/CSS, most of them 
+        fail to teach usable web skills. Even the most legacy sites have
+        reached the conclusion that web development without a framework
+        is barely usable, schools still teach basic web skills, that 
+        cannot be used in any company environment.
+      </p>
+      <p>
+        A Better option would be to have a fundamental introduction into
+        web technologies at the core, but pivot after a day or two into a
+        framework, that is actually used by professionals. There is a
+        reason why all big corporations and professionals are using 
+        frameworks and always recommend to use one.
+      </p>
+      <main>
+      <div id="comments-section">
+        <form>
+          <span>Post a comment:</span>
+          <textarea></textarea>
+          <button type="submit" style="width: 100%">Post</button>
+        </form>
+        <hr />
+        <div class="comment">
+          <h3><b>SomeRandomUser</b> comments:</h3>
+          <p>This is to true. I always used a framework at work.</p>
+      </div>
+    </div>
+  </body>
+</html>
