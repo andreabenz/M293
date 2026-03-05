@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 16px;
+    height: 60px;
+}
+
+header #left, header #right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header a {
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+#profile {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: seagreen;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 0;
+    text-decoration: none !important;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+main > img {
+    margin-top: 20px;
+    height: 92px;
+    margin-bottom: 30px;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 584px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    border: 1px solid lightgrey;
+    border-radius: 24px;
+    padding: 0 14px;
+    transition: box-shadow 0.2s;
+}
+
+.search-bar:hover, .search-bar:focus-within {
+    background-color: white;
+    box-shadow: 0 1px 6px grey;
+    border-color: transparent;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    fill: grey;
+    margin-right: 10px;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    height: 34px;
+}
+
+.search-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#Microphone {
+    height: 20px;
+    cursor: pointer;
+}
+
+#Image\ Search {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+#buttons {
+    padding-top: 18px;
+    display: flex;
+    gap: 12px;
+}
+
+#buttons button {
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    color: darkslategrey;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    cursor: pointer;
+}
+
+#buttons button:hover {
+    box-shadow: 0 1px 1px lightgrey;
+    background-color: whitesmoke;
+    border: 1px solid lightgrey;
+    color: black;
+}
+
+footer {
+    background: whitesmoke;
+    color: black;
+    font-size: 14px;
+}
+
+#footer-location {
+    padding: 15px 30px;
+    border-bottom: 1px solid lightgrey;
+}
+
+#footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#footer-center {
+    width: 100%;
+    order: -1;
+    display: flex;
+    justify-content: center;
+}
+
+#footer-left, #footer-right {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer a {
+    display: block;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#footer-center a {
+    display: flex;
+    align-items: center;
+}
+
+#footer-leaf-icon {
+    height: 14px;
+    margin-right: 6px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google-Copy</title>
+    <link rel="stylesheet" href="D2.css">
+</head>
+<body>
+
+<header>
+    <div id="left">
+        <a href="javascript:void(0);">Über Google</a>
+        <a href="javascript:void(0);">Store</a>
+    </div>
+    <div id="right">
+        <a href="javascript:void(0);">Gmail</a>
+        <a href="javascript:void(0);">Bilder</a>
+        <a id="grid-icon" href="javascript:void(0);"><img src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="Grid-Symbol"></a>
+        <a id="profile" href="javascript:void(0);">A</a>
+    </div>
+</header>
+
+<main>
+    <img src="logo.svg" alt="Google Logo">
+    <div class="search-container">
+        <div class="search-bar">
+            <svg class="search-icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+            <input type="text" class="search-input">
+            <div class="search-actions">
+                <img id="Microphone" src="data:image/png;base64,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" alt="Voice Search">
+                <img id="Image Search" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Google_Lens_Icon.svg/250px-Google_Lens_Icon.svg.png" alt="Search by Image">
+            </div>
+        </div>
+        <div id="buttons">
+            <button>Google Suche</button>
+            <button>Auf gut Glück!</button>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div id="footer-location">Schweiz</div>
+    <div id="footer-links">
+        <div id="footer-left">
+            <a href="javascript:void(0);">Werbeprogramme</a>
+            <a href="javascript:void(0);">Unternehmen</a>
+            <a href="javascript:void(0);">Wie funktioniert die Google Suche?</a>
+        </div>
+        <div id="footer-center">
+            <a href="https://sustainability.google/intl/de_ch/carbon-free/?utm_source=googlehpfooter&amp;utm_medium=housepromos&amp;utm_campaign=bottom-footer&amp;utm_content=">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC" id="footer-leaf-icon" alt="">
+                <span>Unser drittes Jahrzehnt für den Klimaschutz</span>
+            </a>
+        </div>
+        <div id="footer-right">
+            <a href="javascript:void(0);">Datenschutzerklärung</a>
+            <a href="javascript:void(0);">Nutzungsbedingungen</a>
+            <a href="javascript:void(0);">Einstellungen</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
